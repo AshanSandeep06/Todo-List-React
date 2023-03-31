@@ -4,7 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "blue-custom":{
+          100: '#16168b'
+        }
+      },
+
+      fontFamily: {
+        "poppins": ['Poppins', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
