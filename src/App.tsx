@@ -43,7 +43,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="text-[22px] font-semibold self-start mt-2">
+          <div className="text-[22px] font-semibold self-start mt-2 mb-1">
             <h1>
               Today Tasks <TaskAltIcon className="mb-[2px]" />
             </h1>
