@@ -11,6 +11,7 @@ export default function Task() {
           label="Task-01"
           variant="filled"
           fullWidth={true}
+          focused
         />
       </div>
 

@@ -5,7 +5,8 @@ import { Button, Paper, TextField } from "@mui/material";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import Task from "./Components/Task";
-import $ from 'jquery';
+import $ from "jquery";
+import { log } from "console";
 
 export default function App() {
   const [state, setState] = useState(0);
@@ -13,8 +14,8 @@ export default function App() {
   useEffect(() => {
     // WRITE CODE HERE
     function addTask(): void {
-      if($('#txtAddTaskField')){
-
+      if($('#txtAddTaskField').val() !== ""){
+        
       }
     }
   }, []);
