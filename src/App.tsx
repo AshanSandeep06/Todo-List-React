@@ -22,7 +22,7 @@ export default function App() {
   const handleAddTask = (): void => {
     if (value !== "") {
       let task: TaskDetails = {
-        id: state,
+        id: state + 1,
         value: value,
       };
       setTasks([...tasks, task]);
