@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, Paper, TextField } from "@mui/material";
+import AssignmentIcon from "@mui/icons-material/Assignment";
+import TaskAltIcon from "@mui/icons-material/TaskAlt";
 
 export default function App() {
   return (
@@ -9,7 +11,9 @@ export default function App() {
       <Paper id="taskListContainer" className="w-3/4 h-3/4" elevation={6}>
         <form className="flex items-center flex-col px-5 py-4 gap-5">
           <div className="text-[28px] font-semibold">
-            <h1>To-Do List</h1>
+            <h1>
+              To-Do List <AssignmentIcon className="mb-[2px]" />
+            </h1>
           </div>
 
           <div className="flex w-full gap-[45px] px-12">
@@ -37,8 +41,10 @@ export default function App() {
             </div>
           </div>
 
-          <div className="text-[28px] font-semibold">
-            <h1>Today Tasks</h1>
+          <div className="text-[22px] font-semibold self-start mt-2">
+            <h1>
+              Today Tasks <TaskAltIcon className="mb-[2px]" />
+            </h1>
           </div>
         </form>
       </Paper>
