@@ -11,7 +11,11 @@ export default function App() {
 
   useEffect(() => {
     // WRITE CODE HERE
-    function addTask(): void {}
+    function addTask(): void {
+      // if($('#txtAddTaskField')){
+
+      // }
+    }
   }, []);
 
   return (
