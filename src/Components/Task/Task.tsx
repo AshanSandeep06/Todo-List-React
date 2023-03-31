@@ -18,7 +18,7 @@ export default function Task() {
           Update
         </Button>
         <Button color="error" variant="outlined" startIcon={<DeleteIcon />}>
-          <Remove></Remove>
+          Remove
         </Button>
       </div>
     </section>
