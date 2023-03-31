@@ -7,12 +7,12 @@ export default function App() {
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
       <Paper id="taskListContainer" className="w-3/4 h-3/4" elevation={6}>
-        <form className="flex items-center flex-col">
-          <div>
-            <h1>To Do List</h1>
+        <form className="flex items-center flex-col px-5 py-4 gap-5">
+          <div className="text-[28px] font-semibold">
+            <h1>To-Do List</h1>
           </div>
 
-          <div className="flex w-3/4">
+          <div className="flex w-full gap-[45px] px-12">
             <div className="w-3/4">
               <TextField
                 id="txtAddTaskField"
@@ -35,6 +35,10 @@ export default function App() {
                 Add Task
               </Button>
             </div>
+          </div>
+
+          <div className="text-[28px] font-semibold">
+            <h1>Today Tasks</h1>
           </div>
         </form>
       </Paper>
