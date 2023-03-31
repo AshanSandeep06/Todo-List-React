@@ -5,7 +5,7 @@ import { Button, Paper, TextField } from "@mui/material";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import Task from "./Components/Task";
-import $ from "jquery";
+import $ from 'jquery';
 
 export default function App() {
   const [state, setState] = useState(0);
