@@ -51,21 +51,6 @@ export default function App() {
 
           <div className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]">
             <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
           </div>
         </form>
       </Paper>

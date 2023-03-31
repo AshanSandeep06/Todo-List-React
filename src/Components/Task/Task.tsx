@@ -14,7 +14,7 @@ export default function Task() {
         />
       </div>
 
-      <div className="buttons flex gap-4 h-1/2 self-center">
+      <div className="buttons flex gap-4 self-center">
         <Button color="primary" variant="contained">
           Update
         </Button>
