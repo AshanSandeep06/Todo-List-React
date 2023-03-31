@@ -48,7 +48,7 @@ export default function App() {
             </h1>
           </div>
 
-          <div>
+          <div className="w-full">
             <Task />
           </div>
         </form>
