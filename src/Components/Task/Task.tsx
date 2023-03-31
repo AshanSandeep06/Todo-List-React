@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 
 export default function Task() {
   return (
@@ -13,8 +13,8 @@ export default function Task() {
       </div>
 
       <div className="buttons">
-        <button>Update</button>
-        <button>Remove</button>
+        <Button variant="contained" sx={{ mt: 1, mb: 1 }}>Update</Button>
+        <Button color="secondary" variant="contained" sx={{ mt: 1, mb: 1 }}>Remove</Button>
       </div>
     </section>
   );
