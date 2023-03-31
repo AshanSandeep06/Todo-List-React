@@ -22,6 +22,9 @@ export default function Task(props: TaskProps) {
           fullWidth={true}
           focused
           value={props.value}
+          InputProps={{
+            readOnly: true,
+          }}
         />
       </div>
 
