@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, Paper, TextField } from "@mui/material";
@@ -7,6 +7,12 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import Task from "./Components/Task";
 
 export default function App() {
+  const [state, setState] = useState(0);
+
+  useEffect(() => {
+    console.log("Component Mounted..!");
+  }, []);
+
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
       <Paper id="taskListContainer" className="w-3/4 h-3/4" elevation={6}>
