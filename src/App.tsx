@@ -10,7 +10,8 @@ export default function App() {
   const [state, setState] = useState(0);
 
   useEffect(() => {
-    console.log("Component Mounted..!");
+    // WRITE CODE HERE
+    
   }, []);
 
   return (
