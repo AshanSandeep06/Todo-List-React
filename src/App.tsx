@@ -11,12 +11,24 @@ import ReactDOM from "react-dom/client";
 
 export default function App() {
   type TaskDetails = {
-    id: string;
-    text: string;
+    id: number;
+    value: string;
   };
 
   const [tasks, setTasks] = useState<TaskDetails[]>([]);
   const [value, setValue] = useState("");
+  const [state, setState] = useState(0);
+
+  const handleAddTask = (): void => {
+    if (value !== "") {
+      let task: TaskDetails = {
+        id: state,
+        value: value,
+      };
+      setTasks([task]);
+      setValue("");
+    }
+  };
 
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
@@ -38,6 +50,8 @@ export default function App() {
                 placeholder="What are your plans today .?"
                 fullWidth={true}
                 autoFocus
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
               />
             </div>
 
