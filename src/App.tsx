@@ -78,7 +78,11 @@ export default function App() {
           <div
             id="taskContainer"
             className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]"
-          ></div>
+          >
+            {tasks.map((task: TaskDetails) => (
+              <Task {...{ id: task.id, value: task.value, update:"", delete:"" }}>{task.value}</Task>
+            ))}
+          </div>
         </form>
       </Paper>
     </div>
