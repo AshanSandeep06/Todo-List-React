@@ -10,12 +10,12 @@ import { log } from "console";
 import ReactDOM from "react-dom/client";
 
 export default function App() {
-  type taskDetails = {
+  type TaskDetails = {
     id: string;
     text: string;
   };
 
-  
+
 
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
