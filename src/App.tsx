@@ -34,6 +34,7 @@ export default function App() {
               <Button
                 type="button"
                 fullWidth
+                color="success"
                 variant="contained"
                 sx={{ mt: 1, mb: 1 }}
               >
