@@ -23,8 +23,6 @@ export default function App() {
               autoFocus
             />
           </div>
-
-
         </form>
       </Paper>
     </div>
