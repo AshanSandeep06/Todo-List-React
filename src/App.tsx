@@ -37,6 +37,16 @@ export default function App() {
   };
 
   const handleUpdateTask = (task: TaskDetails, newText: string): void => {
+    // if (document.querySelectorAll("Button")[1].textContent == "Update") {
+    //   $(".btnUpdate").text("Save");
+    //   $(".taskField").removeAttr("readonly");
+    //   console.log("Hi Hello..!");
+    //   $(".taskField").focus();
+    // } else {
+    //   $(".btnUpdate").text("Update");
+    //   $(".taskField").attr("readonly", "readonly");
+    // }
+
     const updatedTasks: TaskDetails[] = tasks.map((t) =>
       t.id === task.id ? { ...t, value: newText } : t
     );

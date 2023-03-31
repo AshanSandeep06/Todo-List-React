@@ -1,6 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./Task.css";
+import { useState } from "react";
 
 type TaskProps = {
   id: number;
@@ -16,6 +17,7 @@ export default function Task(props: TaskProps) {
     <section className="task flex w-full px-[60px]">
       <div className="task-text w-3/4 mr-8">
         <TextField
+          className="taskField"
           id={"" + props.id}
           label={"Task-" + props.id}
           variant="filled"
@@ -29,10 +31,16 @@ export default function Task(props: TaskProps) {
       </div>
 
       <div className="buttons flex gap-4 self-center">
-        <Button color="primary" variant="contained" onClick={props.update}>
+        <Button
+          className="btnUpdate"
+          color="primary"
+          variant="contained"
+          onClick={props.update}
+        >
           Update
         </Button>
         <Button
+          className="btnRemove"
           color="error"
           variant="outlined"
           startIcon={<DeleteIcon />}
