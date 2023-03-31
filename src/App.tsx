@@ -10,6 +10,13 @@ import { log } from "console";
 import ReactDOM from "react-dom/client";
 
 export default function App() {
+  type taskDetails = {
+    id: string;
+    text: string;
+  };
+
+  
+
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
       <Paper id="taskListContainer" className="w-3/4 h-3/4" elevation={6}>
