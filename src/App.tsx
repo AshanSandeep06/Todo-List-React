@@ -80,7 +80,7 @@ export default function App() {
             className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]"
           >
             {tasks.map((task: TaskDetails) => (
-              <Task {...{ id: task.id, value: task.value, update:"", delete:"" }}>{task.value}</Task>
+              <Task {...{ id: task.id, value: task.value }}>{task.value}</Task>
             ))}
           </div>
         </form>
