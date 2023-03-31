@@ -5,8 +5,8 @@ import "./Task.css";
 type TaskProps = {
   id: number;
   value: string;
-  // update: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  // delete: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  update: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  delete: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 type TaskState = {};
@@ -26,14 +26,14 @@ export default function Task(props: TaskProps) {
       </div>
 
       <div className="buttons flex gap-4 self-center">
-        <Button color="primary" variant="contained" >
+        <Button color="primary" variant="contained" onClick={props.update}>
           Update
         </Button>
         <Button
           color="error"
           variant="outlined"
           startIcon={<DeleteIcon />}
-          // onClick={props.delete}
+          onClick={props.delete}
         >
           Remove
         </Button>
