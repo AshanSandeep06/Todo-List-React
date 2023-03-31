@@ -21,6 +21,10 @@ type AppState = {
 };
 
 export default class App extends Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="App w-screen h-screen flex justify-center items-center">
