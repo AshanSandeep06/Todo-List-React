@@ -1,9 +1,10 @@
 import { Button, TextField } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
+import "./Task.css";
 
 export default function Task() {
   return (
-    <section className="task flex w-full px-[60px] border-2 border-slate-600">
+    <section className="task flex w-full px-[60px]">
       <div className="task-text w-3/4 mr-8">
         <TextField
           id="filled-basic"
