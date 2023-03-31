@@ -31,18 +31,18 @@ export default function Task(props: TaskProps) {
       </div>
 
       <div className="buttons flex gap-4 self-center">
-        <Button
+        {/* <Button
           className="btnUpdate"
           color="primary"
           variant="contained"
           onClick={props.update}
         >
           Update
-        </Button>
+        </Button> */}
         <Button
           className="btnRemove"
           color="error"
-          variant="outlined"
+          variant="contained"
           startIcon={<DeleteIcon />}
           onClick={props.delete}
         >
