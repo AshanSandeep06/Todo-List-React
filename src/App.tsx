@@ -11,6 +11,10 @@ import { log } from "console";
 export default function App() {
   const [state, setState] = useState(0);
 
+  const [value, setValue] = useState("");
+
+  const [id, setId] = useState(0);
+
   useEffect(() => {
     // WRITE CODE HERE
     function addTask(): void {
