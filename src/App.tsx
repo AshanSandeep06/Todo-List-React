@@ -7,19 +7,27 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import Task from "./Components/Task";
 import $ from "jquery";
 import { log } from "console";
+import ReactDOM from "react-dom/client";
 
 export default function App() {
   const [state, setState] = useState(0);
 
-  const [value, setValue] = useState("");
+  // const [value, setValue] = useState("");
 
-  const [id, setId] = useState(0);
+  // const [id, setId] = useState(0);
+
+  const [[], setDeTaskDetails] = useState([]);
 
   useEffect(() => {
     // WRITE CODE HERE
+
+    $("#btnAddTask").on("click", function () {
+      addTask();
+    });
+
     function addTask(): void {
       if ($("#txtAddTaskField").val() !== "") {
-        $("#txtAddTaskField").val();
+        $("#taskContainer").append("<Task/>");
       }
     }
   }, []);
@@ -49,6 +57,7 @@ export default function App() {
 
             <div className="flex gap-8 justify-center">
               <Button
+                id="btnAddTask"
                 type="button"
                 fullWidth
                 color="success"
@@ -69,9 +78,7 @@ export default function App() {
           <div
             id="taskContainer"
             className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]"
-          >
-            <Task />
-          </div>
+          ></div>
         </form>
       </Paper>
     </div>
