@@ -31,6 +31,18 @@ export default function App() {
     }
   };
 
+  const handleDeleteTask = (task: TaskDetails): void => {
+    const filteredTasks: TaskDetails[] = tasks.filter((t) => t.id !== task.id);
+    setTasks(filteredTasks);
+  };
+
+  const handleUpdateTask = (task: TaskDetails, newText: string): void => {
+    const updatedTasks: TaskDetails[] = tasks.map((t) =>
+      t.id === task.id ? { ...t, value: newText } : t
+    );
+    setTasks(updatedTasks);
+  };
+
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
       <Paper id="taskListContainer" className="w-3/4 h-3/4" elevation={6}>
@@ -83,7 +95,13 @@ export default function App() {
           >
             {tasks.map((task: TaskDetails) => (
               <Task
-                {...{ id: task.id, key: task.id, value: task.value }}
+                {...{
+                  id: task.id,
+                  key: task.id,
+                  value: task.value,
+                  update: () => handleUpdateTask(task, ""),
+                  delete: () => handleDeleteTask(task),
+                }}
               ></Task>
             ))}
           </div>
