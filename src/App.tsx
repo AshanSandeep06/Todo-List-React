@@ -9,7 +9,18 @@ import $ from "jquery";
 import { log } from "console";
 import ReactDOM from "react-dom/client";
 
-export default class App extends Component {
+type TaskDetails = {
+  id: string;
+  text: string;
+};
+
+type AppProps = {};
+
+type AppState = {
+  tasks: TaskDetails[];
+};
+
+export default class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div className="App w-screen h-screen flex justify-center items-center">
