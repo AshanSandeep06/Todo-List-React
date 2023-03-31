@@ -49,7 +49,19 @@ export default function App() {
             </h1>
           </div>
 
-          <div className="w-full px-[60px]n flex flex-col gap-5">
+          <div className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]">
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
+            <Task />
             <Task />
             <Task />
             <Task />
