@@ -2,7 +2,7 @@ import { TextField } from "@mui/material";
 
 export default function Task() {
   return (
-    <section className="task flex border-2 border-black">
+    <section className="task flex border-2 border-black w-full">
       <div className="task-text">
         <TextField id="filled-basic" label="Task-01" variant="filled" />
       </div>
