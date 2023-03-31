@@ -13,9 +13,9 @@ export default function App() {
   useEffect(() => {
     // WRITE CODE HERE
     function addTask(): void {
-      // if($('#txtAddTaskField')){
+      if($('#txtAddTaskField')){
 
-      // }
+      }
     }
   }, []);
 
