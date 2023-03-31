@@ -13,7 +13,7 @@ export default function Task() {
         />
       </div>
 
-      <div className="buttons flex h-1/2 self-center">
+      <div className="buttons flex gap-5 h-1/2 self-center">
         <Button color="primary" variant="contained">
           Update
         </Button>
