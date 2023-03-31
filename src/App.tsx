@@ -49,7 +49,10 @@ export default function App() {
             </h1>
           </div>
 
-          <div className="w-full px-[60px]">
+          <div className="w-full px-[60px]n flex flex-col gap-5">
+            <Task />
+            <Task />
+            <Task />
             <Task />
           </div>
         </form>
