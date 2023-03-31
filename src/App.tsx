@@ -25,7 +25,7 @@ export default function App() {
         id: state,
         value: value,
       };
-      setTasks([task]);
+      setTasks([...tasks, task]);
       setValue("");
     }
   };
@@ -62,6 +62,7 @@ export default function App() {
                 fullWidth
                 color="success"
                 variant="contained"
+                onClick={handleAddTask}
                 sx={{ mt: 1, mb: 1 }}
               >
                 Add Task
@@ -80,7 +81,7 @@ export default function App() {
             className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]"
           >
             {tasks.map((task: TaskDetails) => (
-              <Task {...{ id: task.id, value: task.value }}>{task.value}</Task>
+              <Task {...{ id: task.id, value: task.value }}></Task>
             ))}
           </div>
         </form>
