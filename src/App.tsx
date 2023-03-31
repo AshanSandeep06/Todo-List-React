@@ -4,6 +4,7 @@ import "./App.css";
 import { Button, Paper, TextField } from "@mui/material";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import Task from "./Components/Task";
 
 export default function App() {
   return (
@@ -45,6 +46,10 @@ export default function App() {
             <h1>
               Today Tasks <TaskAltIcon className="mb-[2px]" />
             </h1>
+          </div>
+
+          <div>
+            <Task />
           </div>
         </form>
       </Paper>
