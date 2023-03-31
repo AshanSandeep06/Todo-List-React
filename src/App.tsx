@@ -15,7 +15,8 @@ export default function App() {
     text: string;
   };
 
-
+  const [tasks, setTasks] = useState<TaskDetails[]>([]);
+  const [value, setValue] = useState("");
 
   return (
     <div className="App w-screen h-screen flex justify-center items-center">
