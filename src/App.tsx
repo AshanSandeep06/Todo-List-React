@@ -11,9 +11,7 @@ export default function App() {
 
   useEffect(() => {
     // WRITE CODE HERE
-    function addTask(): void {
-      
-    }
+    function addTask(): void {}
   }, []);
 
   return (
@@ -58,7 +56,10 @@ export default function App() {
             </h1>
           </div>
 
-          <div className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]">
+          <div
+            id="taskContainer"
+            className="w-full px-[60px]n flex flex-col gap-5 overflow-y-auto h-[298px]"
+          >
             <Task />
           </div>
         </form>
