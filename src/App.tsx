@@ -100,7 +100,7 @@ export default function App() {
                   key: task.id,
                   value: task.value,
                   update: () => handleUpdateTask(task, ""),
-                  delete: () => handleDeleteTask(task)
+                  delete: () => handleDeleteTask(task),
                 }}
               ></Task>
             ))}
