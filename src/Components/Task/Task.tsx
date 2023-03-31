@@ -10,8 +10,6 @@ type TaskProps = {
   delete: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-type TaskState = {};
-
 export default function Task(props: TaskProps) {
   return (
     <section className="task flex w-full px-[60px]">
